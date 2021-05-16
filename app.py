@@ -11,15 +11,14 @@ import io
 import os
 import img2pdf
 
-st.title("Title")
-st.header("Bored of writing assignmnets?")
-st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.0;'>Here's a simple quick hack for you. Just write the text that you would like to see handwritten on a paper</h6>",unsafe_allow_html=True)
+st.title("Handwritten Text")
+st.header("Bored of making handwritten notes?")
+st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.0;'>Making handwritten documents may sound like a tiring job, especially when the text is too long. Wouldn't it be convenient if you could just type the text, and convert it to a handwritten PDF? Well, this app does just that!</h6>",unsafe_allow_html=True)
 st.markdown("")
 
 st.sidebar.title("Text-to-Handwriting")
 
 text = st.text_input('Enter some text here')
-
 
 def get_binary_file_downloader_html(bin_file, file_label='File'):
     with open(bin_file, 'rb') as f:
